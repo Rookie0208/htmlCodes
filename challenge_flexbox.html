@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Layout</title>
+    <style>
+        .bigbox {
+            border: 1px solid orange;
+            padding: 10px;
+            margin: 5px;
+            width: 33%;
+            background-color: blue;
+            flex-flow: row wrap;
+            /* grid-template-columns: auto; */
+        }
+.outer-box {
+    display: flex;
+    
+    /* align-items: stretch; */
+    /* flex-flow: row wrap;  */
+
+}
+
+        .bigbox2,
+        .bigbox3 {
+            border: 1px solid orange;
+            padding: 10px;
+            width: 33%;
+            height: 150px;
+            margin: 5px;
+            background-color: blue;
+            /* flex-wrap: wrap; */
+        }
+
+        .box, .dabbe {
+            padding: 5px;
+            width: 33%;
+            border: 1px solid darkcyan;
+            background-color: whitesmoke;
+            border-radius: 4px;
+            margin: 5px;
+        }
+        .dabbe{
+            background-color: blue;
+            color: white;
+        }
+
+        .container,
+        .container2,
+        .container3, .extra, .extra2 {
+            display: flex;
+            /* flex-wrap: wrap; */
+            /* align-items: flex-end; */
+        }
+        
+
+    </style>
+</head>
+
+<body>
+    <div class="outer-box">
+    <div class="bigbox">
+        <div class="container">
+            <div class="box" id="inner-box">box 1</div>
+            <div class="box" id="inner-box">box 2</div>
+            <div class="box" id="inner-box">box 3</div>
+        </div>
+        <div class="container2">
+            <div class="box" id="inner-box1">box 1</div>
+            <div class="box" id="inner-box2">box 2</div>
+            <div class="box" id="inner-box3">box 3</div>
+            <div class="box" id="inner-box4">box 4</div>
+        </div>
+        <div class="container3">
+            <div class="box" id="inner-box1">box 1</div>
+            <div class="box" id="inner-box2">box 2</div>
+            <div class="box" id="inner-box3">box 3</div>
+            <div class="box" id="inner-box4">box 4</div>
+            <div class="box" id="inner-box5">box 5</div>
+        </div>
+    </div>
+    <div class="bigbox2"></div>
+    <div class="bigbox3"></div>
+</div>
+<div class="extra">
+<div class="dabbe">box 1</div>
+<div class="dabbe">box 2</div>
+<div class="dabbe">box 3</div>
+<div class="dabbe">box 4</div>
+</div>
+<div class="extra2">
+    <div class="dabbe">box 1</div>
+    <div class="dabbe">box 2</div>
+    <div class="dabbe">box 3</div>
+    <div class="dabbe">box 4</div>
+    <div class="dabbe">box 5</div>
+    </div>
+</body>
+
+</html>
